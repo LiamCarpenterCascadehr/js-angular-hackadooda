@@ -1,0 +1,15 @@
+{
+    "node": true,
+    "strict": true,
+    "eqeqeq": true,
+    "indent": true,
+    "maxdepth": 2,
+    "quotmark": "single",
+    "predef": [
+        "it",
+        "describe",
+        "beforeEach",
+        "afterEach",
+        "before"
+    ]
+}

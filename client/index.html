@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/app.css">
+</head>
+<body>
+    <div class="container" ng-controller="TodoController">
+
+        <h2>Total To-Dos: {{getTotalTodos()}}</h2>
+
+        <ul class="list-unstyled">
+            <li ng-repeat="todo in todos">
+                <!--
+                    This is the todo-item user control - angular calls controls 'directives' 
+                    You can use the pre-made directive below, just uncomment it:
+                -->
+                <!-- <todo-item item="todo"></todo-item> -->
+                <input type="checkbox" ng-model="todo.done">
+                <span class="done-{{todo.done}}">{{todo.text | nullStringify}}</span>
+            </li>
+        </ul>
+
+        <form class="form-horizontal">
+            <input type="text" ng-model="formTodoText" ng-model-instant>
+            <button class="btn btn-primary" ng-click="addTodo()">
+                <span class="glyphicon glyphicon-plus"></span>
+                Add
+            </button>
+        </form>
+
+        <button class="btn btn-danger btn-lg" ng-click="clearCompleted()">
+            <span class="glyphicon glyphicon-trash"></span>
+            Clear Completed
+        </button>
+
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>

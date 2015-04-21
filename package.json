@@ -1,0 +1,32 @@
+{
+  "name": "js-hackathon",
+  "version": "1.0.0",
+  "description": "JavaScript Hackathon",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "npm run build:js && npm run build:sass",
+    "build:js": "browserify lib/index.js > client/js/app.js",
+    "build:sass": "node-sass sass/main.scss client/css/app.css",
+    "watch": "watchify lib/index.js -v -o client/js/app.js",
+    "test": "mocha test/",
+    "lint:lib": "jscs lib && jshint lib",
+    "lint:test": "jscs test && jshint test",
+    "pretest": "npm run lint:lib && npm run lint:test"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "jscs": "^1.12.0",
+    "jshint": "^2.7.0",
+    "mocha": "^2.2.4",
+    "node-sass": "^2.1.1",
+    "watchify": "^3.1.2"
+  },
+  "dependencies": {
+    "angular": "^1.3.15",
+    "lodash": "^3.7.0"
+  }
+}
