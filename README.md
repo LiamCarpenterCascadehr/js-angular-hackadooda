@@ -32,24 +32,24 @@ First, lets watch this video for an overview of Angular JS:
 
 
 ## Tasks
-1. Total To-Dos doesn't work - *1 point*
+1. Total To-Dos doesn't work - **1 point**
     - The `getTotalTodos` function needs to return a count of all the todos that are in the `todos` array.
-    - Fix the failing test for an additional - *1 point*
+    - Fix the failing test for an additional - **1 point**
 
-2. Extract the logic from clearCompleted and addTodo into the service - *2 points*
+2. Extract the logic from clearCompleted and addTodo into the service - **2 points**
 
-3. Write some unit tests for the todo service - *3 points*
+3. Write some unit tests for the todo service - **3 points**
 
-4. Move the todo checkbox and span into the directive - *2 points*
+4. Move the todo checkbox and span into the directive - **2 points**
 
-5. Add a filter bar that can filter between: All, Active and Completed todos. - *5 points*
+5. Add a filter bar that can filter between: All, Active and Completed todos. - **5 points**
     - You can use this for the UI: http://getbootstrap.com/components/#nav-pills
     - You can use angulars 'filters' for this, look at the existing nullStringify filter for a hint.
 
-6. Add validation to the input form so that a blank item cannot be added - *2 points*
+6. Add validation to the input form so that a blank item cannot be added - **2 points**
     - Look at using ng-class to dynamically add a class
     - Look at using ng-disabled to dynamically disable a form element
 
-7. Extend the model (scope) in the controller to add a timestamp. Then create a filter to make the timestamp human readable (dd/MM/yyyy hh:mm). - *4 points*
+7. Extend the model (scope) in the controller to add a timestamp. Then create a filter to make the timestamp human readable (dd/MM/yyyy hh:mm). - **4 points**
 
-8. Change the todoService to read data from local storage using the helper in the `lib/helpers` folder
+8. Change the todoService to read data from local storage using the helper in the `lib/helpers` folder - **6 points**
