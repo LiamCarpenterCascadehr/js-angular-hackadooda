@@ -3,8 +3,8 @@
 ## Eyup!
 This is an example 'Todo' app to help you get starting with GitHub, NodeJS, AngularJS and Common JS JavaScript.
 
-What you need to do is start by working through the 'Getting Started' section and then work through the issues on the GitHub issues page in whatever order you wish.
-There is a prize for the person who can get through the most issues in this session.
+What you need to do is start by working through the 'Getting Started' section and then work through the tasks on the bottom of this page in whatever order you wish.
+There is a prize for the team who can get through the most issues in this session.
 
 First, lets watch this video for an overview of Angular JS:
 - [Angular JS Tutorial](https://www.youtube.com/watch?v=WuiHuZq_cg4)
