@@ -3,37 +3,39 @@
 var todo   = require('../lib/controllers/todo'),
     assert = require('assert');
 
-
-
 describe('todo', function () {
 
-    var todos = [
-        {
-            text: 'Build an app',
-            done: false
-        },
-        {
-            text: 'Test the app',
-            done: false
-        },
-        {
-            text: 'Learn AngularJS',
-            done: false
+    var mockService = {
+        getTodos: function () {
+            return [
+                {
+                    text: 'Build an app',
+                    done: false
+                },
+                {
+                    text: 'Test the app',
+                    done: false
+                },
+                {
+                    text: 'Learn AngularJS',
+                    done: false
+                }
+            ];
         }
-    ];
+    };
+
 
     it('should get the total number of todos', function () {
         // arrange
         var $scope = { },
             result;
-        todo($scope);
-        $scope.todos = todos;
+        todo($scope, mockService);
 
         // act
         result = $scope.getTotalTodos();
 
         // assert
-        assert.equal(result, 3);
+        assert(false);
     });
 
 
@@ -42,8 +44,7 @@ describe('todo', function () {
         // arrange
         var $scope = { },
             result;
-        todo($scope);
-        $scope.todos = todos;
+        todo($scope, mockService);
         $scope.formTodoText = 'Dude!, You need to do this task.';
 
         // act
