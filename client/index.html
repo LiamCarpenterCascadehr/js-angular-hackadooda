@@ -13,9 +13,13 @@
                 <div class="panel-heading">
                     <h3 class="panel-title">Total To-Dos: {{getTotalTodos()}}</h3>
                 </div>
-
+                <div style="color:red; font-family:Comic Sans, Comic Sans MS, cursive; float: right">
+                    <input type="text" placeholder="search shizzle" id="searchText" style="background-color:yellow; border: solid 3px; "/>
+                    <span class="glyphicon glyphicon-search"></span>
+                </div>
+                <div style="clear:both"></div>
                 <ul class="list-group">
-                    <li ng-repeat="todo in todos" class="list-group-item">
+                    <li ng-repeat="todo in todos | filter:queryText" class="list-group-item">
                         <!--
                             This is the todo-item user control - angular calls controls 'directives'
                             You can use the pre-made directive below, just uncomment it:
