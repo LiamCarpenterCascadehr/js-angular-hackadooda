@@ -1,6 +1,6 @@
 'use strict';
 
-var todo   = require('../lib/controllers/todo'),
+var todo   = require('../lib/controllers/todoController'),
     assert = require('assert');
 
 describe('todo', function () {
@@ -35,7 +35,7 @@ describe('todo', function () {
         result = $scope.getTotalTodos();
 
         // assert
-        assert(false);
+        assert.equal(result, 3);
     });
 
 
