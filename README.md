@@ -10,6 +10,7 @@ This is an example 'Todo' app to help you get starting with NodeJS, AngularJS, C
 4. Work through [these issues](https://github.com/CascadeHR/js-angular-hackadooda/issues).
 
 To resolve an issue do the following:
+
 1. Fork the repository using the fork button at the top right of the repository main screen.
 2. Pull the repository down, fix the issue and commit the code in git.
 3. Push the code up to GitHub, this should then show a button on the main screen of your forked repo that allows you to submit a pull request.
