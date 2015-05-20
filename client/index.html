@@ -27,6 +27,10 @@
                         <!-- <todo-item item="todo"></todo-item> -->
                         <input type="checkbox" ng-model="todo.done">
                         <span class="done-{{todo.done}}">{{todo.text | nullStringify}}</span>
+                        <button type="button" class="btn btn-xs btn-danger pull-right" ng-click="clearIndividual($index)">
+                         <span class="glyphicon glyphicon-remove"></span>
+                                        Remove
+                        </button>
                     </li>
                 </ul>
 
