@@ -36,11 +36,11 @@
 
                 <div class="panel-footer">
                     <p>
-                        <form class="form-horizontal">
+                        <form class="form-horizontal" name="myForm">
                             <div class="input-group">
-                                <input placeholder="task name..." class="form-control" type="text" ng-model="formTodoText" ng-model-instant>
-                                <span class="input-group-btn">
-                                    <button class="btn btn-primary" type="button" ng-click="addTodo()">
+                                <input name="textbox" placeholder="Please Enter The Task Name" class="form-control" type="text" ng-minlength="1" ng-model="formTodoText" ng-model-instant required ng-change="onChange()">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button" ng-click="addTodo()" ng-disabled="!isValid">
                                         <span class="glyphicon glyphicon-plus"></span>
                                         Add
                                     </button>
